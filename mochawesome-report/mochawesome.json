@@ -1,0 +1,205 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-01T13:56:35.482Z",
+    "end": "2021-05-01T13:56:59.632Z",
+    "duration": 24150,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e0efb1bd-5029-49b2-ab41-9d206fb9c2dc",
+      "title": "",
+      "fullFile": "cypress/integration/test-suite.spec.js",
+      "file": "cypress/integration/test-suite.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cd13558c-9c8d-49af-852b-61d9a3ee5e76",
+          "title": "Assignment 02 - Karl-Johan Käll",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Perform Valid login",
+              "fullTitle": "Assignment 02 - Karl-Johan Käll Perform Valid login",
+              "timedOut": null,
+              "duration": 2769,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginFuncs.performLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\ndashboardFuncs.performLogout(cy, 'Login');",
+              "err": {},
+              "uuid": "9832d61c-317c-4435-bebd-d55b88aeb08f",
+              "parentUUID": "cd13558c-9c8d-49af-852b-61d9a3ee5e76",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Perform Invalid login",
+              "fullTitle": "Assignment 02 - Karl-Johan Käll Perform Invalid login",
+              "timedOut": null,
+              "duration": 1448,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginFuncs.performLogin(cy, _faker.default.internet.userName(), _faker.default.internet.password(), 'Login');\nloginFuncs.checkFailedLogin(cy);",
+              "err": {},
+              "uuid": "3bf5e778-8599-414a-b53c-9a9a8052b858",
+              "parentUUID": "cd13558c-9c8d-49af-852b-61d9a3ee5e76",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check Room Page Links",
+              "fullTitle": "Assignment 02 - Karl-Johan Käll Check Room Page Links",
+              "timedOut": null,
+              "duration": 3034,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginFuncs.performLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\ndashboardFuncs.goToRooms(cy);\nroomsFuncs.backButton(cy);\ndashboardFuncs.goToRooms(cy);\nroomsFuncs.homeButton(cy);\ndashboardFuncs.goToRooms(cy);\nroomsFuncs.goToCreateRoom(cy);\ncreateRoomFuncs.backButton(cy);\nroomsFuncs.goToCreateRoom(cy);\ncreateRoomFuncs.homeButton(cy);\ndashboardFuncs.performLogout(cy, 'Login');",
+              "err": {},
+              "uuid": "2de809a1-e9b4-44bc-9403-a615f1fbc01b",
+              "parentUUID": "cd13558c-9c8d-49af-852b-61d9a3ee5e76",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Room",
+              "fullTitle": "Assignment 02 - Karl-Johan Käll Create Room",
+              "timedOut": null,
+              "duration": 3801,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginFuncs.performLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\ndashboardFuncs.goToRooms(cy);\nroomsFuncs.goToCreateRoom(cy);\ncreateRoomFuncs.createRoom(cy);\nroomsFuncs.homeButton(cy);\ndashboardFuncs.performLogout(cy, 'Login');",
+              "err": {},
+              "uuid": "05bf9e15-44b8-46f2-8938-183629b6d5b4",
+              "parentUUID": "cd13558c-9c8d-49af-852b-61d9a3ee5e76",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Edit Room",
+              "fullTitle": "Assignment 02 - Karl-Johan Käll Edit Room",
+              "timedOut": null,
+              "duration": 3913,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginFuncs.performLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\ndashboardFuncs.goToRooms(cy);\nroomsFuncs.goToEditRoom(cy);\nroomFuncs.editRoom(cy);\ndashboardFuncs.performLogout(cy, 'Login');",
+              "err": {},
+              "uuid": "7b2bd8ae-4f0c-47b6-b4fc-1baf954147f6",
+              "parentUUID": "cd13558c-9c8d-49af-852b-61d9a3ee5e76",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete Room",
+              "fullTitle": "Assignment 02 - Karl-Johan Käll Delete Room",
+              "timedOut": null,
+              "duration": 2193,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginFuncs.performLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\ndashboardFuncs.goToRooms(cy);\nroomsFuncs.deleteRoom(cy);\ndashboardFuncs.performLogout(cy, 'Login');",
+              "err": {},
+              "uuid": "d59fb2e4-af56-450a-bfe9-f3f19b8a9e50",
+              "parentUUID": "cd13558c-9c8d-49af-852b-61d9a3ee5e76",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9832d61c-317c-4435-bebd-d55b88aeb08f",
+            "3bf5e778-8599-414a-b53c-9a9a8052b858",
+            "2de809a1-e9b4-44bc-9403-a615f1fbc01b",
+            "05bf9e15-44b8-46f2-8938-183629b6d5b4",
+            "7b2bd8ae-4f0c-47b6-b4fc-1baf954147f6",
+            "d59fb2e4-af56-450a-bfe9-f3f19b8a9e50"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17158,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+          "reportDir": "cypress/reports/mocha",
+          "quite": true,
+          "overwrite": false,
+          "html": false,
+          "json": true,
+          "timestamp": "mmddyyyy_HHMMss"
+        }
+      },
+      "version": "5.2.0"
+    }
+  }
+}
